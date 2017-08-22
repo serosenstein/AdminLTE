@@ -428,6 +428,11 @@ if($auth) {
                         <i class="fa fa-ban"></i> <span>Blacklist</span>
                     </a>
                 </li>
+		<li<?php if($scriptname === "static"){ ?> class="active"<?php } ?>>
+                    <a href="static.php">
+                        <i class="fa fa-pencil-square-o"></i> <span>Static DNS List</span>
+                    </a>
+                </li>
                 <!-- Toggle -->
 
                 <li id="pihole-disable" class="treeview"<?php if ($pistatus == "0") { ?> hidden="true"<?php } ?>>
